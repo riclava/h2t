@@ -104,7 +104,7 @@ func (api *apiHandler) flush(c *gin.Context) {
 
 var bind = flag.String("bind", ":8081", "Binding address")
 var withAPI = flag.Bool("with-api", true, "Allow service config API on HTTP")
-var debug = flag.Bool("debug", false, "Is http2tcp running on debug mode")
+var debug = flag.Bool("debug", false, "Is h2t running on debug mode")
 var cfg = flag.String("config", "./conf/services.json", "Config filename")
 
 type router struct {
