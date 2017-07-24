@@ -1,0 +1,13 @@
+[Unit]
+Description=h2t
+After=network.target
+
+[Service]
+Type=forking
+ExecStart=/usr/local/services/h2t/bin/start
+ExecReload=/usr/local/services/h2t/bin/restart
+ExecStop=/usr/local/services/h2t/bin/stop
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
